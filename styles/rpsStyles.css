@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* HTML and Body Styles */
+html {
+    background-color : rgb(70, 151, 97);
+}
+  
+body {
+    color: rgb(91, 91, 91);
+    background-color: khaki;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Heading Styles */
+h1 {color: white; 
+    background-color: rgb(97, 136, 47);
+    font-size: 2em;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+h2 {color: white; 
+    background-color: rgb(59, 148, 94);
+    font-size: 1em;
+    margin: 10px 0px;
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1em;
+    padding: 10px;
+} 
+
+/* Page Body Styles */
+body {
+    max-width: 960px;
+    min-width: 640px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* scoreboard text */
+div#score p{
+    width: 31%;
+    display : block;
+    float: left;
+    margin: 10px;
+    padding: 5Px;
+    color: white;
+    background-color: rgb(113, 86, 39);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Form Button Styles */
+#buttons {
+    text-align: center;
+    width: 100%;
+    margin: 8px;
+}
+#restart {
+    font-size: 20px;
+    color: red;
+}
+
+/* Win condition text */
+#winCondition {
+    display : inline;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+/* all images */
+img {
+    display: block;
+    width: 10%;
+}
+
+/* player choice image, game result text, 
+    computer choice image  */
+.gameContainer {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+/* player choice image */
+.pResult {
+    display: block;
+    float: left;
+    width: 33%;
+    padding: 0px 90px;
+}
+
+/* game result text */
+#resultText {
+    display: block;
+    float: left;
+    width: 33%;
+    padding: 5px 20px;
+    text-align: center;
+    color: rgb(97, 136, 47);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 60px; 
+}
+
+/* computer choice image */
+.cResult {
+    display: block;
+    float: left;
+    width: 33%;
+    padding: 0px 90px;
+}
+
+/* text above rock, paper, scissor image */
+#choiceMessage {
+    margin-left: 30px; 
+    color: rgb(113, 86, 39);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* player rock, paper, scissor images bottom left */
+.playerChoices {
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: none;
+}
+.option {
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Footer Styles */
+footer {
+    clear: left;
+    background-color: rgb(97, 136, 47);
+    color: white;
+    font: normal small-caps bold 0.9em/3em
+      Quicksand, Verdana, Geneva, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+    
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+
+    
+    
