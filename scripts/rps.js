@@ -13,6 +13,7 @@ let paper_div = document.getElementById("paper");
 let scissors_div = document.getElementById("scissors");
 
 let reset_btn = document.getElementById("reset");
+let choice_message = document.getElementById("choiceMessage");
 
 //EventListner
 //player chooses between rock/paper/scissors
@@ -60,6 +61,10 @@ function game(userAction) {
     //when player or computer reaches 3 wins, displayes game over message
     if (scoreboard.player == 3 || scoreboard.computer == 3) {
         let final_result = "";
+        rock_div.style.visibility = 'hidden';
+        paper_div.style.visibility = 'hidden';
+        scissors_div.style.visibility = 'hidden';
+        choice_message.innerHTML = '';
         if (scoreboard.player > scoreboard.computer) {
             final_result = "Game Over! You Win!";
         } else {
@@ -96,6 +101,10 @@ function restartGame() {
     document.getElementById('computerChoice').src = 'images/computer.jpg';
     result_div.innerHTML = "Score has been reset! Let's see who wins this time!";
     result_div.style.color = "#61882f";
+    rock_div.style.visibility = 'visible';
+    paper_div.style.visibility = 'visible';
+    scissors_div.style.visibility = 'visible';
+    choice_message.innerHTML = 'Take your pick';
     score.innerHTML = `
       <p>Player: 0</p>
       <p>Round: 0</p>
